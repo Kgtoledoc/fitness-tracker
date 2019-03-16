@@ -21,4 +21,9 @@ export class ProductsComponent {
 
   }
 
+  onRemoveProduct(productName: string) {
+    console.log("Click me");
+    this.products = this.products.filter(p => p !== productName);
+  }
+
 }
